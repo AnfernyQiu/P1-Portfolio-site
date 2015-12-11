@@ -45,7 +45,7 @@ img{
     display: -webkit-flex;
     display: flex;
   
-    -webkit-flex-flow: row;
+    -webkit-flex-flow: row wrap;
     
     justify-content: space-between;
     border-bottom: 4px solid #bcbbbb;
@@ -76,7 +76,7 @@ img{
 .author{
     display: inline-block;
 }
-.author h1{
+.name{
     margin: 10px 0;
 }
 
@@ -88,7 +88,6 @@ img{
 
 .nav{
     width:50%;
-    height: 1.5em;
     margin:0 auto;
     margin-top: 60px;
 }
@@ -117,9 +116,11 @@ img{
     margin: 0 auto;  
 }
 .hero{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
-
+.feature{
+    margin-bottom: 10px;
+}
 .works {
   padding: 0;
   margin: 0;
@@ -136,4 +137,5 @@ img{
 }
 .work{
     text-align: center;
+    margin-bottom: 10px;
 }
