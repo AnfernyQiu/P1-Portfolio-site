@@ -5,6 +5,9 @@
     .header{
         width:80%;
     }
+    .header img{
+        height:70px;
+    }
     .nav{
         order: 2;
         margin: 0;

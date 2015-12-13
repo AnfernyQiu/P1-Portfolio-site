@@ -9,12 +9,17 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <script>
+        // Picture element HTML5 shiv
+        document.createElement( "picture" );
+        </script>
+        <script src="js/picturefill.min.js" async></script>
 	</head>
 	<body>
         <div class="top">
             <header class="header">
                 <div class="logo">
-                    <a href="https://www.udacity.com" title="Udacity"><img src="image/logo.svg" alt="Udacity Logo"></a>
+                    <a href="https://www.udacity.com" title="Udacity"><img src="images_src/logo.svg" alt="Udacity Logo"></a>
                 </div>
                 <div class="author text-uppercase ">
                     <h1 class="name">Rambo Qiu</h1>
@@ -39,7 +44,11 @@
 	    </div>
 	    <main class="main">
 	        <section class="hero">
-	            <img src="http://placehold.it/800x400" alt="cat">
+                <picture>
+                    <source media="(min-width:750px)" srcset="images/hero-800_large_1x.jpg 1x,images/hero-1600_large_2x.jpg 2x"/>
+                    <source media="(min-width:500px)" srcset="images/hero-1500_medium_.jpg"/>
+                    <img src="images/hero-1000_small_.jpg" alt="SomeLogo">
+                </picture>
 	        </section>
 	        <section class="feature">
 	            <h2>Featured Work</h2>
@@ -49,7 +58,8 @@
 	                <li class="work">
 	                    <figure>
 	                        <picture>
-	                            <img src="http://placehold.it/250x250" alt="">
+	                            <source srcset="images/resume-500_2x.jpg 2x, images/resume-250_1x.jpg"/>
+	                            <img src="images/resume-250_1x.jpg" alt="resume">
 	                        </picture>
 	                        <figcaption class="figcap">
 	                        <h3>Interative Resume</h3>
@@ -60,7 +70,8 @@
 	                <li class="work">
 	                    <figure>
 	                        <picture>
-	                            <img src="http://placehold.it/250x250" alt="">
+                                <source srcset="images/game-500_2x.jpg 2x, images/game-250_1x.jpg"/>
+	                            <img src="images/game-250_1x.jpg" alt="game">
 	                        </picture>
 	                        <figcaption class="figcap">
 	                        <h3>Arcade Game</h3>
@@ -71,7 +82,8 @@
 	                <li class="work">
 	                    <figure>
 	                        <picture>
-	                            <img src="http://placehold.it/250x250" alt="">
+                                <source srcset="images/optimize-500_2x.jpg 2x, images/optimize-250_1x.jpg"/>
+	                            <img src="images/optimize-250_1x.jpg" alt="optimize">
 	                        </picture>
 	                        <figcaption class="figcap">
 	                        <h3>Website Optimization</h3>
@@ -82,7 +94,8 @@
 	                <li class="work">
 	                    <figure>
 	                        <picture>
-	                            <img src="http://placehold.it/250x250" alt="">
+                                <source srcset="images/map-500_2x.jpg 2x, images/map-250_1x.jpg"/>
+	                            <img src="images/map-250_1x.jpg" alt="map">
 	                        </picture>
 	                        <figcaption class="figcap">
 	                        <h3>Map Project</h3>
@@ -93,18 +106,8 @@
 	                <li class="work">
 	                    <figure>
 	                        <picture>
-	                            <img src="http://placehold.it/250x250" alt="">
-	                        </picture>
-	                        <figcaption class="figcap">
-	                        <h3>Health Tracker</h3>
-	                        <a href="#">https://gitHub.com/AnfernyQiu</a>
-	                        </figcaption>
-	                    </figure>
-	                </li>
-	                <li class="work">
-	                    <figure>
-	                        <picture>
-	                            <img src="http://placehold.it/250x250" alt="">
+                                <source srcset="images/test-500_2x.jpg 2x, images/test-250_1x.jpg"/>
+	                            <img src="images/test-250_1x.jpg" alt="test">
 	                        </picture>
 	                        <figcaption class="figcap">
 	                        <h3>Feed Reader Testing</h3>
@@ -113,14 +116,10 @@
 	                    </figure>
 	                </li>
 	            </ul>
-	        </section>
-	        
-	    </main>
-	    
-	    
+	        </section>      
+	    </main>    
 	    <script src="js/jquery.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
-	    <script src="js/picturefill.min.js"></script>
 	    <script src="js/main.js"></script>
 	</body>
 </html>
