@@ -1,78 +1,90 @@
 @media screen and (max-width: 600px) {
-    .top{
+    .top {
         height: 88px;
     }
-    .header{
-        width:80%;
+    
+    .header {
+        width: 80%;
     }
-    .header img{
-        height:70px;
+    
+    .header img {
+        height: 70px;
     }
-    .nav{
+    
+    .nav {
         order: 2;
         margin: 0;
         z-index: 10;
         background-color: #555;
         width: 200px;
-        -webkit-transform:translate(-210px,0);
+        -webkit-transform: translate(-210px,0);
         transform: translate(-210px,0);
         transition: transform 0.3s ease;
     }
-    .nav.open{
-        -webkit-transform:translate(0,0);
+    
+    .nav.open {
+        -webkit-transform: translate(0,0);
         transform: translate(0,0);
     }
-    .nav__item{
+    
+    .nav__item {
         display: list-item;
         border-bottom: 1px solid #e1e1e1;
-        width:100%;
+        width: 100%;
         text-align: left;
         padding: 1em;
     }
-    .nav__item a{
+    .nav__item a {
         color: azure;
     }
-    .hamburger{
+    
+    .hamburger {
         width: 20%;
-        order:1;
+        order: 1;
         text-align: right;
     }
-    .hamburger svg{
-        width:48px;
-        fill:#aaaaaa;
+    
+    .hamburger svg {
+        width: 48px;
+        fill: #aaaaaa;
     }
    
-    h1{
-        font-size:1.6em;
+    h1 {
+        font-size: 1.6em;
     }
-    h2,h3{
+    
+    h2,
+    h3 {
         font-size: 1.4em;
     }
-    h4{
+    
+    h4 {
         font-size: 0.8em;
     }
 }
 
-@media screen and (min-width: 601px){
-    .hamburger{
+@media screen and (min-width: 601px) {
+    .hamburger {
         display: none;
     } 
-    .nav__item a{
+    
+    .nav__item a {
         padding: 3px 13px;
         color: black;
         
     }
-    .nav__item a:hover{
-        text-decoration:none;
+    
+    .nav__item a:hover {
+        text-decoration: none;
         background-color: #e2e2e2;
-        box-shadow:-2px -3px 3px #000;
+        box-shadow: -2px -3px 3px #000;
         border-radius: 13px;
     }
     
 }
 
-@media screen and (min-width: 750px){
-    .nav__item a{
+@media screen and (min-width: 750px) {
+    .nav__item a {
         padding: 4px 18px;
     }
 }
